@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>juego</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Bienvenido al juego de preguntas Sobre capitales</h1>
+	</header>
+
+	<div class="container">
+		<section id="p0">
+			<h3>1- Cual es la capitqal de Chile</h3>
+			<label for="">
+				<input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Valparaiso
+			</label>
+			<label for="">
+				<input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Concepción
+			</label>
+			<label for="">
+				<input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Santiago
+			</label>
+		</section>
+			<section id="p1">
+			<h3>2- Cual es la capitqal de Argentina</h3>
+			<label for="">
+				<input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Buenos Aires
+			</label>
+			<label for="">
+				<input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Córdoba
+			</label>
+			<label for="">
+				<input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Mendoza
+			</label>
+		</section>
+			<section id="p2">
+			<h3>3- Cual es la capitqal de Brasil</h3>
+			<label for="">
+				<input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Río de Janeiro
+			</label>
+			<label for="">
+				<input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Brasilia
+			</label>
+			<label for="">
+				<input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> São Paulo
+			</label>
+		</section>
+			<section id="p3">
+			<h3>4- Cual es la capital de España</h3>
+			<label for="">
+				<input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Barcelona
+			</label>
+			<label for="">
+				<input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Madrid
+			</label>
+			<label for="">
+				<input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Sevilla
+			</label>
+		</section>
+			<section id="p4">
+			<h3>5- Cual es la capital de Estados Unidos</h3>
+			<label for="">
+				<input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Los Angeles
+			</label>
+			<label for="">
+				<input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Nueva York
+			</label>
+			<label for="">
+				<input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Washington D. C.
+			</label>
+		</section>
+		<button onclick="corregir()">corregir</button>
+		<h2>cantidad acertadas: <span id="resultado"></span></h2>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

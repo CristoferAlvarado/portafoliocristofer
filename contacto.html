@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contactos</title>
+	<link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+	<div class="title">
+  <h1>FORMULARIO DE CONTACTO</h1>
+</div>
+  <form action="https://formspree.io/f/xqkjzdaz"  method="POST" target="_blank">
+
+  <fieldset class="contenido">
+    <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
+    <p><label>Tu apellido: <input type="text" name="apellido"></label></p>
+    <p><label>Tu numero: <input type="number" name="numero"></label></p>
+
+    <p><label>Tu dirección de correo: <input type="email" name="correo" required pattern=".+@globex\"></label></p>
+    <p>
+      <label>
+        Tu mensaje:<br>
+         <textarea name="mensaje"></textarea>
+      </label>
+    </p>
+  </fieldset>
+  <p>
+    <input type="submit" value="Enviar mensaje">
+
+    <input type="reset" value="Comenzar de nuevo">
+  </p>
+  <button class="volver"><a href="index.html">Volver</a></button>
+</form>
+</body>
+</html>
